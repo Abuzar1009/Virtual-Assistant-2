@@ -1,0 +1,72 @@
+@import url('https://fonts.googleapis.com/css2?family=Black+Ops+One&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    width: 100%;
+    height: 100%;
+    background-color: black;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 30px;
+    flex-direction: column;
+}
+#logo{
+    width: 20vw;
+}
+h1{
+    color: aliceblue;
+    font-family: "Black Ops One", serif;
+}
+#name{
+    color: rgb(247, 44, 77);
+    font-size: 40px;
+}
+#va{
+    color: aqua;
+    font-size: 35px;
+}
+#voice{
+    width: 250px;
+    display: none;
+}
+#btn{
+width: 30%;
+background: linear-gradient(to right,red,rgb(6, 195, 253));
+padding: 10px;
+display: flex;
+align-content: center;
+justify-content: center;
+gap: 10px;
+font-size: 20px;
+border-radius: 20px;
+color: white;
+box-shadow: 2px 2px 10px rgb(6, 195, 253),2px 2px 10px red;
+border: none;
+transition: all 0.5s;
+cursor: pointer;
+}
+#btn:hover{
+    box-shadow: 2px 2px 20px rgb(6, 195, 253),2px 2px 20px red;
+    letter-spacing: 2px;
+}
+/*--------for mobile-------*/
+/* Mobile-specific styling */
+@media (max-width: 768px) {
+    #btn {
+        width: 80%; /* Button width for smaller screens */
+        font-size: 1rem; /* Adjust font size */
+    }
+    
+    h1 {
+        font-size: 24px; /* Adjust heading font size for mobile */
+    }
+    
+    #name, #va {
+        font-size: 24px; /* Adjust name and VA font size for mobile */
+    }
+}
